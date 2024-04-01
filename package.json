@@ -1,7 +1,7 @@
 {
   "name": "devcode",
   "version": "1.0.0",
-  "description": "\ta simple website for our local developers community to bring more ",
+  "description": "\tA simple website for our local developers community to bring more ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
