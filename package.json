@@ -1,14 +1,19 @@
 {
   "name": "devcode",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "description": "\ta simple website for our local developers community to bring more ",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "vite": "^5.2.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DipanNama/DevCode.git"
+  },
+  "author": "DipanNama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DipanNama/DevCode/issues"
+  },
+  "homepage": "https://github.com/DipanNama/DevCode#readme"
 }
