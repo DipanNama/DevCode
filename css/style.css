@@ -1,5 +1,66 @@
+/* FONT IMPORT */
+
+/* VARIABLE DECLARATION */
+:root{
+    --light-gray : #222126;
+    --dark-gray : #1c1b20;
+    --light-green : #31a945;
+    --light-blue : #2364c2;
+    --dark-blue : #202737;
+    --dark-icon : #6e6d72;
+}
+
+
+/* GLOBAL DECLARATION */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* BODY STYLING */
+html,body{
+    /* background-color: rgb(33, 33, 36); */
+    background-color: var(--light-gray);
+    color: white;
+}
+
+/* NAVIGATION BAR SETTING */
+nav{
+    position: relative;
+}
+nav .navbar{
+    background-color: var(--light-green);
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container{
+    /* height: calc(100vh - 60px); */
+    width: 100vw;
+    height: 100vh;
+    background-color: #2364c2;
+    display: flex;
+    position: absolute;
+    /* top: 60px; */
+}
+
+.container .left-container{
+    flex: 1;
+    background-color: red;
+}
+
+.container .mid-container{
+    flex: 4;
+    background-color: blue;
+}
+
+.container .right-container{
+    flex: 1;
+    background-color: orange;
 }
