@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevCode | Tripura</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -12,27 +19,35 @@
     <nav>
       <div class="navbar">
         <div class="nav-left">
-          <div class="logo-icon">@</div>
+          <div class="logo-icon">
+            <i class="fa-regular fa-compass"></i>
+          </div>
           <div class="domain">DevCode</div>
         </div>
 
         <div class="nav-mid">
           <div class="search-bar">
-            <div class="search-icon">S</div>
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
             <input type="text" placeholder="Search..." />
           </div>
         </div>
+
         <div class="nav-right">
-          <div class="notification">N</div>
+          <div class="notification">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
           <div class="account">
             <div class="account-avatar">
               <!-- Include Image for account avatar -->
-              <!-- <img src="assets/decision_making.jpg" alt=""> -->
-              <span>A</span>
+              <img src="assets/avatars/avarar2.png" alt="user" />
             </div>
           </div>
           <div class="menu">
-            <div class="hamburger">..</div>
+            <div class="hamburger">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -43,25 +58,108 @@
     <div class="container">
       <!-- Left Container starts here -->
       <div class="left-container">
-        <h1>Left container data</h1>
-        <div class="category"></div>
-        <div class="topic"></div>
+        <div class="category-menu">
+          <div class="menu-header">
+            <h2>Menu</h2>
+          </div>
+          <div class="menu-data">
+            <div class="menu-list">
+              <div class="menu-list-items">
+                <ul>
+                  <li>Home</li>
+                  <li>Friends</li>
+                  <li>Computer Science</li>
+                  <li>Roadmaps</li>
+                  <li>Project Ideas</li>
+                  <li>Open Source</li>
+                  <li>Events</li>
+                  <li>Forum</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-header">
+            <div class="topic-list">
+              <div class="topic-header">
+                <h2>Trending Topics</h2>
+                <div class="topic-chips">
+                  <ul>
+                    <span>Web Dev</span>
+                    <span>App Dev</span>
+                    <span>Cyber Securiry</span>
+                    <span>DevOps</span>
+                    <span>UI/UX</span>
+                    <span>AI Tools</span>
+                    <span>AI/ML</span>
+                    <span>MongoDB</span>
+                    <span>Express JS</span>
+                    <span>React JS</span>
+                    <span>Python</span>
+                    <span>OOPS</span>
+                    <span>C++ Language</span>
+                    <span>Mathematics</span>
+                    <span>Node JS</span>
+                    <span>Flutter</span>
+                    <span>Kubernetes</span>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Portfolio"></div>
+        <div class="calender"></div>
+        <div class="skills"></div>
         <div class="bookmarks"></div>
 
-        <div class="left-container-footer"></div>
+        <div class="left-container-footer">
+          <div class="social-Network">
+            <div class="social-media-links">
+              <div class="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <div class="github">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="x-twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+              </div>
+              <div class="youtube">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+          <div class="help">
+            <h5>Help?</h5>
+          </div>
+        </div>
       </div>
       <!-- Left Container starts here -->
 
       <!-- Middle Container starts here -->
       <div class="mid-container">
-        <h1>Middle container data</h1>
-
-        <div class="mid-container-left">
-          <div class="post">
-            <div class="card"></div>
+        <div class="mid-container-main">
+          <div class="mid-container-left">
+            <div class="mid-container-top-left">
+              <div class="create-post"></div>
+            </div>
+            <div class="mid-container-bottom-left">
+              <div class="post">
+                <div class="card">
+                  <h1>Post data</h1>
+                </div>
+              </div>
+              <div class="post">
+                <div class="card">
+                  <h1>Post data</h1>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="mid-container-right"></div>
+        <div class="mid-container-right">post data right-container</div>
       </div>
       <!-- Middle Container ends here -->
 
@@ -75,7 +173,19 @@
 
         <div class="teams"></div>
 
-        <div class="right-container-footer"></div>
+        <div class="right-container-footer">
+          <div class="right-container-footer-left">
+            <div class="footer-search-bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div class="right-container-footer-right">
+            <div class="settings">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Right Container ends here -->
     </div>

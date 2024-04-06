@@ -1,13 +1,17 @@
 /* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* VARIABLE DECLARATION */
 :root{
+    /* COLOR DEFINATION */
     --light-gray : #222126;
     --dark-gray : #1c1b20;
     --light-green : #31a945;
     --light-blue : #2364c2;
     --dark-blue : #202737;
     --dark-icon : #6e6d72;
+
+    --container-radious : 10px;
 }
 
 
@@ -20,47 +24,181 @@
 
 /* BODY STYLING */
 html,body{
-    /* background-color: rgb(33, 33, 36); */
-    background-color: var(--light-gray);
+    /* background-color: #31a945; */
+    background-color: var(--dark-gray);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
     color: white;
 }
 
 /* NAVIGATION BAR SETTING */
 nav{
+    display: flex;
+    flex: 1;
     position: relative;
+    width: 100vw;
+    height: 6vh;
+    /* height: 60px; */
+    /* margin:0 20px ; */
 }
 nav .navbar{
-    background-color: var(--light-green);
-    height: 60px;
+    background-color: var(--light-gray);
+    /* background-color: #2364c2; */
+    /* background-color: transparent; */
+    height: 6vh;
     width: 100vw;
     position: fixed;
-    z-index: 999;
+    /* z-index: 999; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 2px solid var(--dark-gray);
 }
 
-.container{
-    /* height: calc(100vh - 60px); */
-    width: 100vw;
-    height: 100vh;
-    background-color: #2364c2;
+nav .navbar .logo-icon i,
+nav .navbar .search-bar .search-icon i,
+nav .navbar .notification i,
+nav .navbar .menu .hamburger i {
+    color: var(--dark-icon);
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+nav .navbar .nav-left{
     display: flex;
-    position: absolute;
-    /* top: 60px; */
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* height: 100%; */
+    gap: 10px;
+    margin-left: 30px;
+}
+
+nav .navbar .nav-left .domain{
+    font-weight: 600;
+    font-size: 1.2em;
+    /* margin-left: 10px; */
+}
+
+
+nav .navbar .nav-mid{
+    display: flex;
+    flex: 8;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 50px;
+}
+
+nav .navbar .nav-mid .search-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+nav .navbar .nav-mid .search-bar input{
+    background-color: #28272c;
+    padding: 10px 40px 10px 5px;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+
+nav .navbar .nav-right{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 30px;
+    gap: 15px;
+    align-items: center;
+}
+
+nav .navbar .nav-right .account .account-avatar img{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+}
+
+
+/* MAIN BODY SECTION STARTS HERE */
+
+.container{
+    display: flex;
+    flex: 1;
+    /* gap: 16px; */
+    height: calc(100vh - 6vh);
+    width: 100vw;
+    /* height: 100vh; */
+    /* background-color: violet; */
+    /* display: flex; */
+    /* position: relative; */
+    /* top: 16px; */
+    box-sizing: border-box;
+    /* padding: 0 30px; */
 }
 
 .container .left-container{
     flex: 1;
-    background-color: red;
+    /* height: 100%; */
+    background-color: var(--light-gray);
+    /* border-radius: var(--container-radious); */
+    border-top-right-radius: 5px;
+    padding: 30px;
 }
 
 .container .mid-container{
+    display: flex;
+    flex: 6;
+    background-color: var(--light-gray);
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: row;
+    /* gap: 20px; */
+    margin: 1.5em 1.5em 0 1.5em;
+    border-radius: 50px 0 0 50px;
+}
+
+/* .container .mid-container .mid-container-main{
+
+} */
+
+.container .mid-container .mid-container-left{
     flex: 4;
-    background-color: blue;
+    
+    /* background-color: green; */
+    width: 40vw;
+}
+
+.container .mid-container .mid-container-right
+{
+    flex: 2;
+    background-color: var(--light-gray);
 }
 
 .container .right-container{
     flex: 1;
-    background-color: orange;
+    background-color: var(--light-gray);
+    padding: 30px;
+}
+
+.container .mid-container .mid-container-bottom{
+    display: flex;
+    flex-direction: column;
+    /* gap: 16px; */
+}
+
+.post{
+    height: 20vw;
+    width: 50vh;
+    margin: 20px;
+    border-radius: var(--container-radious);
+    background-color: var(--light-gray);
 }
