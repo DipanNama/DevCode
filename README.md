@@ -1,8 +1,46 @@
-# React + Vite
+# Tripura Developers Community Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Tripura Developers Community Website! This website serves as a platform for local developers in Tripura to connect, collaborate, and share knowledge.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React.js
+- Vite
+
+## Installation
+
+To install and run this website locally, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   https://github.com/DipanNama/DevCode.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd DevCode
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit `http://localhost:5173` to view the website.
+
+## Contributing
+
+We welcome contributions from the community! If you'd like to contribute to this project, please follow our [contribution guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
