@@ -6,6 +6,8 @@ Welcome to the Tripura Developers Community Website! This website serves as a pl
 
 - React.js
 - Vite
+- SCSS/SASS
+- Tailwind CSS
 
 ## Installation
 
