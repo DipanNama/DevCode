@@ -1,0 +1,11 @@
+{
+
+    // Experimental: Shows the current command at the top of the terminal.
+    "terminal.integrated.stickyScroll.enabled": true,
+
+    // Defines the maximum number of sticky lines to show.
+    // Sticky scroll lines will never exceed 40% of the viewport regardless of this setting.
+    "terminal.integrated.stickyScroll.maxLineCount": 10,
+
+
+}
