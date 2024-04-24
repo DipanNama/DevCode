@@ -7,6 +7,10 @@
 @tailwind utilities;
 
 
+$primary-color: #2364c2;
+$nav-height: 7vh;
+$side-container-width: 18vw;
+
 /* VARIABLE DECLARATION */
 :root{
     /* COLOR DEFINATION */
@@ -30,10 +34,11 @@
 /* BODY STYLING */
 html,body{
     /* background-color: var(--dark-gray); */
-    background-color: #31a945;
+    // background-color: #31a945;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     color: white;
+    width: 100vw;
 }
 
 /* NAVIGATION BAR SETTING */
@@ -42,16 +47,14 @@ nav{
     flex: 1;
     position: relative;
     width: 100vw;
-    height: 6vh;
+    height: 7vh;
+    z-index: 9999;
 
     & .navbar{
         background-color: var(--light-gray);
-        /* background-color: #2364c2; */
-        /* background-color: transparent; */
-        height: 6vh;
+        height: 7vh;
         width: 100vw;
         position: fixed;
-        /* z-index: 999; */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -63,7 +66,7 @@ nav{
         .menu .hamburger i {
             color: var(--dark-icon);
             font-weight: 700;
-            font-size: 1.2em;
+            font-size: 2em;
         }
         
         & .nav-left{
@@ -77,9 +80,9 @@ nav{
             margin-left: 30px;
 
             & .domain{
-                font-weight: 600;
-                font-size: 1.2em;
-                /* margin-left: 10px; */
+                font-weight: 700;
+                font-size: 2em;
+                color: $primary-color;
             }
         }
 
@@ -135,23 +138,22 @@ nav{
 /* MAIN BODY SECTION STARTS HERE */
 
 /* MAIN CONTAINER STARTS HERE*/
-.container{
+.main-container{
     display: flex;
-    /* flex: 1; */
-    justify-content: center;
-    height: calc(100vh - 6vh);
-    width: 100vw;
-    box-sizing: border-box;
+    flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    height: calc(100vh - $nav-height);
+    width: 100%;
+    // box-sizing: border-box;
 
     & .left-container{
-        flex: 1;
+        // flex: 1;
         background-color: var(--light-gray);
-        /* background-color: red; */
-        /* border-top-right-radius: 5px; */
-        position: fixed;
-        left: 0;
-        height: 100vh;
-        width: 20vw;
+        // position: fixed;
+        // left: 0;
+        // height: 100vh;
+        width: $side-container-width;
 
         & .category-menu{
             display: flex;
@@ -286,15 +288,15 @@ nav{
 
     & .mid-container{
         display: flex;
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* flex: 1; */
-        /* background-color: var(--light-gray); */
-        /* background-color: #2364c2; */
         flex-direction: row;
-        /* margin: 1.5em 1.5em 0 1.5em; */
-        /* border-radius: 50px 0 0 50px; */
-        width: 60vw;
+        // position: relative;
+        // z-index: 1;
+        background-color: red;
+        width: calc(100vw - 2*$side-container-width);
+        // justify-content: center;
+        // align-items: center;
+        // height: 20vh;
+        overflow-y: scroll;
 
         & .mid-container-left{
             display: flex;
@@ -302,8 +304,9 @@ nav{
             flex-direction: row;
             flex-wrap: wrap;
             /* align-items: center; */
-            justify-content: center;
+            // justify-content: center;
             background-color: var(--dark-gray);
+            // position: absolute;
         
             & .mid-container-top-left {
                 margin: 20px ;
@@ -333,7 +336,7 @@ nav{
                             display: flex;
                             flex-direction: row;
                             gap: 15px;
-                            flex: 1;
+                            // flex: 1;
                             padding: 20px;
                             justify-content: center;
                             align-items: center;
@@ -353,7 +356,7 @@ nav{
 
                         & .photo{
                             display: flex;
-                            flex: 1;
+                            // flex: 1;
                             gap: 15px;
                             /* flex: 1; */
                             padding: 20px;
@@ -491,13 +494,13 @@ nav{
     }
 
     & .right-container{
-        flex: 1;
+        // flex: 1;
         /* background-color: var(--light-gray); */
         background-color: green;
         padding: 30px;
-        position: fixed;
+        // position: fixed;
         right: 0;
-        height: 100vh;
-        width: 20vw;
+        // height: 100vh;
+        width: $side-container-width;
     }
 }
