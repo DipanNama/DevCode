@@ -8,7 +8,11 @@ app.get('/', (req, res) => {
     res.send('Hello World');
   });
 
+  app.get('/run', (req, res) => {
+    res.send('Hello World 2');
+  });
+
 
 app.listen(process.env.PORT, () => {
-    console.log(`Server is running on localhost:${process.env.PORT}`);
+    console.log(`Server is running on http://localhost:${process.env.PORT}`);
   });

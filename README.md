@@ -12,6 +12,40 @@ Welcome to the Tripura Developers Community Website! This website serves as a pl
 - SCSS
 - Tailwind CSS
 
+## Ideas to be implemented
+
+- Project idea/code sharing section
+- problem discussion forum /doubt solving
+- DSA sheet / problems section
+- various data visualisation section
+- overall one global chat box / post related something
+- - where various person will have various authority
+- - admin , sub-admin & different roles
+- personal message section/ individual account
+- community meet-up (online/offline)
+- open-source contribution
+- New opportunity/hackathon/announcement
+- our own hackathon (implementation)
+  -- web dev projects
+  -- app dev projects
+  -- innovative software idea
+  -- our own CTF
+- notes sharing
+- AI integration for various purposes
+- why to learn what ?
+
+```bash
+^ basic computer science
+^ Linux
+^ cyber security
+^ DSA
+^ Web Development
+^ app development
+^ Dev Ops & others
+^ Learn AI tools
+^ UI / UX design
+```
+
 ## Installation
 
 To install and run this website locally, follow these steps:
