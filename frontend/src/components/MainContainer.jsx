@@ -8,9 +8,9 @@ const MainContainer = () => {
         <div>
             <div class="main-container">
                 <SideBar />
-
-                <MiddleContainer />
-
+                <div className="middle-offset">
+                    <MiddleContainer />
+                </div>
                 <RightSideBar />
             </div>
         </div>

@@ -1,16 +1,11 @@
 /* FONT IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import './variables.scss';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-$primary-color: #2364c2;
-$secondary-color:#202737;
-$nav-height: 7vh;
-$side-container-width: 15vw;
 
 /* VARIABLE DECLARATION */
 :root{
@@ -101,14 +96,14 @@ nav{
                 gap: 10px;
                 /* justify-content: space-between; */
                 align-items: center;
-                // background-color: #38363f;
+                background-color: var(--dark-gray);
                 // background-color: #fff;
                 padding: 5px 0px 5px 10px;
                 border-radius: 10px;
                 // color: #fff;
 
                 & input{
-                    background-color: #38363f;
+                    background-color: var(--dark-gray);
                     padding: 10px 40px 10px 5px;
                     outline: none;
                     border: none;
@@ -163,13 +158,13 @@ nav{
         background-color: var(--light-gray);
         // position: fixed;
         // left: 0;
-        // height: 100vh;
+        height: $side-container-height;
         width: $side-container-width;
 
         & .category-menu{
             display: flex;
             flex-direction: column;
-            /* gap: 12px; */
+            height: 50%;
 
             & .category-title{
                 font-size: 1.2em;
@@ -223,6 +218,8 @@ nav{
         & .topic{
             display: flex;
             flex-direction: column;
+            height: 50%;
+
 
             & .topic-title{
                 font-size: 1.2em;
@@ -239,6 +236,8 @@ nav{
                 flex-wrap: wrap;
                 gap: 8px;
                 padding: 0 30px 0 ;
+                overflow-y: scroll;
+                scrollbar-width: none;
 
                 & span{
                     /* width: 100%; */
@@ -261,7 +260,7 @@ nav{
             width: $side-container-width;
             position: fixed;
             bottom: 0;
-            /* background-color: #2364c2; */
+            background-color: var(--light-gray); 
             
             display: flex;
             justify-content: space-between;
@@ -307,31 +306,23 @@ nav{
     & .mid-container{
         display: flex;
         flex-direction: row;
-        // position: relative;
-        // z-index: 1;
-        // background-color: red;
-        // width: 50vw;
-        // justify-content: center;
-        // align-items: center;
-        // height: 20vh;
-        // overflow-y: scroll;
-        // scrollbar-width: none;
+        // width: 100%;
+        gap: 20px;
 
         & .mid-container-left{
             display: flex;
-            flex: 2;
+            // flex: 2;
+            width: calc(70vw - 20vw);
+            // background-color: red;
             flex-direction: row;
             flex-wrap: wrap;
-            /* align-items: center; */
-            // justify-content: center;
-            // background-color: var(--dark-gray);
-            // position: absolute;
+            gap: 20px;
         
             & .mid-container-top-left {
-                margin: 20px ;
-                height: 30vh;
-                width: 90%;
-                background-color: var(--light-gray);
+                margin: 20px 0px;
+                height: $create-post-container-height;
+                width: 100%;
+                // background-color: var(--light-gray);
                 // background-color: #fff;
                 border-radius: 10px;
                 
@@ -339,6 +330,9 @@ nav{
                     display: flex;
                     flex-direction: column;
                     height: 100%;
+                    background-color: var(--light-gray);
+                    border-radius: 10px;
+                    width: 100%;
                     padding: 10px;
 
                     & .create-post-top{
@@ -347,7 +341,7 @@ nav{
                         /* background-color: red; */
                         flex-direction: row;
                         width: 100%;
-                        height: 10vh;
+                        height: $create-post-individual-height;
                         justify-content: space-between;
                         /* gap: 20px; */
                         padding: 0 20px;
@@ -436,7 +430,7 @@ nav{
                     & .create-post-mid{
                         display: flex;
                         // flex: 4;
-                        height: 10vh;
+                        height: 14vh;
                         width: 100%;
                         // background-color: blue; 
                         flex-direction: row;
@@ -448,11 +442,12 @@ nav{
                             display: flex;
                             flex: 1;
                             justify-content: center;
-                            align-items: center;
+                            padding: 20px 0px 20px 20px;
+                            // align-items: center;
 
                             & img{
-                                height: 50px;
-                                width: 50px;
+                                height: 30px;
+                                width: 30px;
                                 border-radius: 50%;
                             }
                         }
@@ -463,8 +458,8 @@ nav{
                             height: 100%;
                             width: 100%;
 
-                            & input{
-                                /* padding: 40px ; */
+                            & textarea{
+                                padding: 20px 0px ;
                                 height: 100%;
                                 width: 100%;
                                 background-color: var(--light-gray);
@@ -484,7 +479,7 @@ nav{
                         /* background-color: green; */
                         flex-direction: row;
                         width: 100%;
-                        height: 10vh;
+                        height: $create-post-individual-height;
                         // height: 100px;
                         justify-content: space-between;
                         /* gap: 20px; */
@@ -492,24 +487,30 @@ nav{
                         align-items: center;
                         border-radius: 0 10px 10px 0;
 
-                        & .fellings{
+                        & .fellings, .location, .extras, .sendBtn{
                             display: flex;
                             justify-content: center;
-                            gap: 5px;
-                        }
+                            gap: 15px;
 
-                        & .location{
+                            & i,h5{
+                                color: #aaa;
+                                font-size: 1.1em;
+                                font-weight: 600;
+                            
+                            }
+
                             display: flex;
+                            flex-direction: row;
+                            gap: 15px;
+                            // flex: 1;
+                            padding: 20px;
+                            justify-content: center;
+                            align-items: center;
+                            border-right: 2px solid var(--line-color);
 
-                        }
-
-                        & .extras{
-                            display: flex;
-
-                        }
-
-                        & .sendBtn{
-                            display: flex;
+                            & span {
+                                font-weight: 600;
+                            }
                         }
                     }                   
                 }
@@ -528,8 +529,9 @@ nav{
         }
 
         & .mid-container-right{
-            flex: 1;
-            background-color: pink;
+            margin: 20px 0px;
+            width: 20vw;
+            background-color: var(--light-gray);
         }
 
         & .mid-container-bottom{
@@ -548,6 +550,7 @@ nav{
         // flex: 1;
         /* background-color: var(--light-gray); */
         background-color: green;
+        height: 100%;
         padding: 30px;
         // position: fixed;
         right: 0;

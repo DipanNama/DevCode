@@ -27,7 +27,7 @@ const CreatePost = () => {
                         <img src="./src/assets/avatars/avarar5.png" alt="user" />
                     </div>
                     <div class="textfield">
-                        <input
+                        <textarea
                             type="text"
                             placeholder="Where you at? What are you doing?"
                         />
