@@ -2,10 +2,10 @@
   "name": "devcode",
   "version": "1.0.0",
   "description": "community website",
-  "main": "backend/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "Dipan Nama",
   "license": "ISC",

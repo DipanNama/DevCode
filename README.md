@@ -4,6 +4,7 @@ Welcome to the Tripura Developers Community Website! This website serves as a pl
 
 ## Technologies Used
 
+- Docker
 - MongoDB
 - Express
 - React.js
@@ -48,7 +49,7 @@ Welcome to the Tripura Developers Community Website! This website serves as a pl
 
 ## Installation
 
-To install and run this website locally, follow these steps:
+To install and run this website menually, follow these steps:
 
 1. Clone the repository:
 
@@ -92,9 +93,43 @@ To install and run this website locally, follow these steps:
    npm run dev
    ```
 
-8. Open your browser and visit `http://localhost:5173` to view the frontend.
+8. Open your browser and visit `http://localhost:8080` to view the frontend.
 
 9. Open your postman and make a get request on `http://localhost:3000` to get the response form the backend.
+
+## Installation using Docker
+
+To install and run this website using Docker and Docker Compose, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/DipanNama/DevCode.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd DevCode
+   ```
+
+3. Create a `.env` file in the project root directory and add the following environment variables:
+
+   ```plaintext
+   MONGODB_URI=mongodb://mongo:27017/devcode
+   ```
+
+4. Build and start the containers using Docker Compose:
+
+   ```bash
+   docker-compose up -d
+   ```
+
+   This command will build the Docker images and start the containers in detached mode.
+
+5. Open your browser and visit `http://localhost:8080` to view the website.
+
+6. Open your Postman or any API testing tool and make a GET request to `http://localhost:3000` to interact with the backend API.
 
 ## Contributing
 
